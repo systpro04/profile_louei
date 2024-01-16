@@ -7,8 +7,8 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 }
 menuIcon.addEventListener('click', () => {
-    navbar.classList.toggle('show'); // You may need to adjust the class name as per your styling
-    menuIcon.classList.toggle('active'); // You may need to adjust the class name as per your styling
+    navbar.classList.toggle('show');
+    menuIcon.classList.toggle('active');
 });
 
 /*==================== scroll sections active link ====================*/
