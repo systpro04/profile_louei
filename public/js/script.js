@@ -57,3 +57,5 @@ const typed = new Typed('.multiple-text', {
     backdelay: 2000,
     loop: true
 });
+
+
