@@ -517,6 +517,9 @@ span {
     .services {
         padding-bottom: 3rem;
     }
+    .hobbies {
+        padding-bottom: 3rem;
+    }
 
     .portfolio {
         padding-bottom: 3rem;
@@ -586,6 +589,10 @@ span {
     }
 
     .services h2 {
+        margin-bottom: 2rem;
+    }
+
+    .hobbies h2 {
         margin-bottom: 2rem;
     }
 
