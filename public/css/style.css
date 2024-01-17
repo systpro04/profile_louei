@@ -229,12 +229,17 @@ span {
 
 }
 
-.portfolio h2{
-    margin-bottom: 4rem;
+.projects {
+    background: var(--bg-color);
 
 }
 
-.portfolio-container {
+.portfolio h2, .projects h2{
+    margin-bottom: 3rem;
+
+}
+
+.portfolio-container, .project-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -247,18 +252,27 @@ span {
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
+    height: 100%;
+}
+.project-container .project-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--second-bg-color);
+    overflow: hidden;
+    display: flex;
+    height: 100%;
 }
 
-.portfolio-box img {
+.portfolio-box img, .project-box img {
     width: 100%;
     transition: .5s ease;
 }
 
-.portfolio-box:hover img {
+.portfolio-box:hover img, .project-box:hover img {
     transform: scale(1.1);
 }
 
-.portfolio-box .portfolio-layer {
+.portfolio-box .portfolio-layer, .project-box .project-layer {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -275,20 +289,20 @@ span {
     transition: .5s ease;
 }
 
-.portfolio-box:hover .portfolio-layer{
+.portfolio-box:hover .portfolio-layer, .project-box:hover .project-layer{
     transform: translateY(0);
 }
 
-.portfolio-layer h4{
+.portfolio-layer h4, .project-layer h4{
     font-size: 3rem;
 }
 
-.portfolio-layer p {
+.portfolio-layer p, .project-layer p {
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
 }
 
-.portfolio-layer a {
+.portfolio-layer a, .project-layer a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -298,6 +312,9 @@ span {
     border-radius: 50%;
 }
 
+.contact{
+    background: var(--second-bg-color);
+}
 .contact h2 {
     margin-bottom: 3rem;
 }
@@ -320,7 +337,7 @@ span {
     padding: 1.5rem;
     font-size: 1.6rem;
     color: var(--text-color);
-    background: var(--second-bg-color);
+    background: var(--bg-color);
     border-radius: .8rem;
     margin: .7rem 0;
 }
@@ -343,7 +360,7 @@ span {
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 
 .footer-text p {
@@ -389,12 +406,14 @@ span {
         padding: 2rem 3%;
     }
     .services{
-        padding-bottom: 7rem;
+        padding-bottom: 5rem;
     }
     .portfolio{
-        padding-bottom: 7rem;
+        padding-bottom: 5rem;
     }
-
+    .projects{
+        padding-bottom: 5rem;
+    }
     .contact {
         min-height: auto;
     }
@@ -448,16 +467,16 @@ span {
     .services h2 {
         margin-bottom: 3rem;
     }
-    .portfolio h2 {
+    .portfolio h2, .projects h2 {
         margin-bottom: 3rem;
     }
-    .portfolio-container {
+    .portfolio-container, .project-container {
 
         grid-template-columns: repeat(2, 1fr);
     }
 }
 @media (max-width: 617px){
-    .portfolio-container {
+    .portfolio-container, .project-container {
         grid-template-columns: 1fr;
     }
 }
