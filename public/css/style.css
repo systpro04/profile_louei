@@ -408,13 +408,13 @@ span {
         padding: 2rem 3%;
     }
     .services{
-        padding-bottom: 5rem;
+        padding-bottom: 3rem;
     }
     .portfolio{
-        padding-bottom: 5rem;
+        padding-bottom: 3rem;
     }
     .projects{
-        padding-bottom: 5rem;
+        padding-bottom: 3rem;
     }
     .contact {
         min-height: auto;
@@ -464,13 +464,13 @@ span {
     }
     .about img {
         width: 70vw;
-        margin-top: 5rem;
+        margin-top: 3rem;
     }
     .services h2 {
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
     .portfolio h2, .projects h2 {
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
     .portfolio-container, .project-container {
 
