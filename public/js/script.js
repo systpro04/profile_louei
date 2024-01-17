@@ -46,9 +46,9 @@ ScrollReveal({
     delay: 2000
 });
 ScrollReveal().reveal('.home-content, .heading', {origin: 'top'});
-ScrollReveal().reveal('.services-container, .portfolio-box, .porject-box, .contact-form', {origin: 'bottom'});
-ScrollReveal().reveal('.about-img', {origin: 'left'});
-ScrollReveal().reveal('.about-content', {origin: 'right'});
+ScrollReveal().reveal('.services-container, .hobbies-container, .portfolio-box, .porject-box, .contact-form', {origin: 'bottom'});
+ScrollReveal().reveal('.home-content p,.about-img', {origin: 'left'});
+ScrollReveal().reveal('.home-content h3,.about-content', {origin: 'right'});
 
 const typed = new Typed('.multiple-text', {
     strings: ['System Programmer', 'Web Developer'],
