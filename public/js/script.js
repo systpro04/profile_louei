@@ -34,7 +34,13 @@ window.onscroll = () => {
     /*==================== sticky navbar ====================*/
     let header = document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY > 100);
-
+    if (window.scrollY <= 100) {
+        header.classList.remove('header-opaque');
+        header.classList.add('header-transparent');
+    } else {
+        header.classList.remove('header-transparent');
+        header.classList.add('header-opaque');
+    }
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 };

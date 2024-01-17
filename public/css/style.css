@@ -49,11 +49,21 @@ section {
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background-color: var(--bg-color);
+    /* background-color: var(--bg-color); */
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    transition: background-color 0.3s ease;
+}
+.header-transparent {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.header-opaque {
+    background-color: var(--bg-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .header .sticky {
