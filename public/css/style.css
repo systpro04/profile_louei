@@ -126,7 +126,7 @@ span {
 }
 .social-media a:hover {
     background: var(--main-color);
-    color: var(--second-bg-color);
+    color: var(--text-color);
     box-shadow: 0 0 1rem var(--main-color);
 
 }
@@ -145,6 +145,7 @@ span {
 
 .btn:hover {
     box-shadow: none;
+    color: var(--text-color);
 }
 
 .about {
@@ -429,14 +430,14 @@ span {
     }
     .home-content img {
         width: 70vw;
-        margin-top: 4rem;
+        margin-top: 5rem;
     }
     .about {
         flex-direction: column-reverse;
     }
     .about img {
         width: 70vw;
-        margin-top: 4rem;
+        margin-top: 5rem;
     }
     .services h2 {
         margin-bottom: 3rem;
@@ -468,6 +469,8 @@ span {
 @media (max-width: 365px){
     .home-img {
         width: 90vw;
+        margin-top: 10rem;
+        margin-left: 20rem;
     }
     .about-img img {
         width: 90vw;
